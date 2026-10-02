@@ -1,0 +1,146 @@
+.jzjy-preview{
+    font-family: '微软雅黑';
+    font-size:14px !important;
+    /*文字不被选中*/
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+.jzjy-preview svg{
+    pointer-events:visiblePainted;
+}
+/*region 变量杆*/
+.jzjy-preview input[type=range] {
+    display: block;
+    position: relative;
+    height: 6px;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    outline:0;
+    margin:0;
+}
+.jzjy-preview input[type=range]:focus {
+    outline: none;
+}
+
+/*range中心圆点*/
+.jzjy-preview input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: -6px;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.jzjy-preview input[type=range]::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.jzjy-preview input[type=range]::-ms-thumb {
+    -ms-appearance: none;
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    -ms-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/*range轨道*/
+.jzjy-preview input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    background:#0064cd;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.jzjy-preview input[type=range]::-moz-range-progress {
+    /*background: linear-gradient(to right, #0064cd, #0064cd 100%, #fff);*/
+    height: 6px;
+}
+.jzjy-preview input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    background:#0064cd;
+    /*background-color: #fff;*/
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.jzjy-preview input[type=range]::-ms-track {
+    width: 100%;
+    height: 6px;
+    color: transparent;
+    background:#0064cd;
+    /*background-color: #fff;*/
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/*!*已达进度*!
+.jzjy-preview input[type=range]::-ms-fill-lower {
+    background-color: #0064cd;
+}
+!*未达进度*!
+.jzjy-preview input[type=range]::-ms-fill-upper {
+    background-color: #fff;
+}*/
+.jzjy-preview input[type=range]::-ms-tooltip { display: none;}
+/*endregion 变量杆*/
+
+
+.jzjy-preview .svg-twinkle_0{
+    animation: jzjy-preview-twinkle 1s infinite;
+}
+.jzjy-preview .svg-twinkle_1{
+    animation: jzjy-preview-twinkle 1s infinite;
+    animation-delay: .3s;
+}
+.jzjy-preview .svg-twinkle_2{
+    animation: jzjy-preview-twinkle 1s infinite;
+    animation-delay: .6s;
+}
+.jzjy-preview .svg-twinkle_3{
+    animation: jzjy-preview-twinkle 1s infinite;
+    animation-delay: .9s;
+}
+.jzjy-preview .svg-twinkle_4{
+    animation: jzjy-preview-twinkle 1s infinite;
+    animation-delay: 1.2s;
+}
+.jzjy-preview .svg-twinkle_5{
+    animation: jzjy-preview-twinkle 1s infinite;
+    animation-delay: 1.5s;
+}
+@keyframes jzjy-preview-twinkle {
+    from{
+        transform: scale(1,1);
+        stroke-opacity: 1;
+    }
+    to{
+        transform: scale(2.5,2.5);
+        stroke-opacity: 0;
+    }
+}
